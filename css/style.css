@@ -1,4 +1,12 @@
 *{
-    background-color: red;
+    background-color:pink
 }
 
+.form_IMC{
+    border-color: black;
+    border: 2px solid;
+    border-radius: 20px;
+    justify-content: center;  
+    align-items: center;
+    
+}

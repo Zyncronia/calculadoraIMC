@@ -11,9 +11,16 @@ function calculaIMC(){
 
 
     if(imc <= 18.5){
-        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<br><span>IMC baixo</span>";
-    }else if((imc > 18.5) && (imc <= 25)){
-        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<br><span>IMC normal</span>";
+        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<span> e seu peso está na categoria: Baixo</span>";
+    }else if (imc <= 24.9){
+        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<span> e seu peso está na categoria: Normal</span>";
+    }else if(imc<=29.9){
+        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<span> e seu peso está na categoria: Acima do peso</span>";
+    }else if(imc<=39.9){
+        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<span> e seu peso está na categoria: Obesidade I</span>";
+    }else{
+        document.getElementById("msgRetorno").innerHTML = "<span>Seu IMC é: </span>"+ imc + "<span> e seu peso está na categoria: Obesidade II</span>";
+    }   
     }
 
 
@@ -31,5 +38,5 @@ function calculaIMC(){
     //         document.getElementById("msgRetorno").innerHTML = "<span>Se deu mal</span>";
     //     break;
     // }
-}
+
 
