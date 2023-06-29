@@ -1,5 +1,8 @@
 *{
-    background-color:pink
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    width: 100%;
+   
 }
 
 .form_IMC{
@@ -8,5 +11,23 @@
     border-radius: 20px;
     justify-content: center;  
     align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    width: 20%;
     
+}
+
+#resp_peso, #resp_altura{
+    background-color: white;
+}
+
+label{
+    text-align: center;
+}
+
+#msgRetorno{
+    padding: 10px;
+    border: 5px solid black;
 }
